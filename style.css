@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #162d31
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 10vh 10vw;
+}
+
+main p {
+  background-color: #edeabc;
+  display: inline-flex;
+  min-width: 14vw;
+  min-height: 14vw;
+  margin: 0.5vw;
+  border-radius: 0.3rem;
+  font-size: 10vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #0c0b09;
+  justify-content: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 4vw;
+}
+
+nav h3 {
+  background-color: #edeabc;
+  display: inline-flex;
+  min-width: 8vw;
+  min-height: 8vw;
+  margin: 0.5vw;
+  border-radius: 0.3rem;
+  font-size: 5vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #0c0b09;
+  justify-content: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 10vw 20vw 0;
+  /* color: white; */
+  align-items: end;
+  justify-items: stretch;
+  justify-content: space-evenly;
+}
+
+aside div {
+  display: flex;
+  margin: 0 5vw;
+  justify-content: center;
+}
+
+aside h4 {
+  background-color: #edeabc;
+  display: inline-flex;
+  min-width: 8vw;
+  min-height: 8vw;
+  margin: 0.5vw;
+  border-radius: 0.3rem;
+  font-size: 3.5vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #0c0b09;
+  justify-content: center;
+  align-items: center;
+}
+aside h2 {
+  background-color: #edeabc;
+  display: inline-flex;
+  min-width: 8vw;
+  min-height: 8vw;
+  margin: 0.5vw;
+  border-radius: 0.3rem;
+  font-size: 3.5vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #0c0b09;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  justify-items: end;
+  flex-direction: column;
+  margin: auto 0;
+  /* min-height: 20vh; */
+  justify-content: center;
+  /* position: absolute; */
+  /* bottom: 10vh; */
+}
+
+h6 {
+  background-color: #e78caf;
+  display: flex;
+  min-width: 13vw;
+  min-height: 8vw;
+  margin: 0.5vw;
+  border-radius: 0.3rem;
+  font-size: 3vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #0c0b09;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0px;
+}
+.active{
+  margin: -0.2vw;
+  border: 3px solid #e78caf;
+  font-size: 9vw;
+}
+
+.fail {
+  background-color: #b3b29f;
+}
+
+
+.try {
+  background-color: #df96b6;
+}
+
+.pass {
+  background-color: #aae48e;
+}
+
+@keyframes shake {
+ 5% {transform: rotate(10deg)}
+ 10% {transform: rotate(-10deg)}
+ 15% {transform: rotate(10deg)}
+ 20% {transform: rotate(0deg)}
+}
+
+.retry{
+  animation: shake 2s 1;
+}
+
+section{
+  min-height: 37vh;
+  min-width: 68vw;
+  position: fixed;
+  background-color: #e78caf;
+  top: 21vh;
+  left: 16vw;
+  box-shadow: 1px 1px 6px 2px #e78caf;
+  display: none;
+}
+
+section div{
+  display: flex;
+  min-height: 20vw;
+  align-items: flex-end;
+}
+
+section h1{
+  /* background-color: #edeabc; */
+  display: inline-flex;
+  min-width: 8vw;
+  min-height: 8vw;
+  margin: 6vw 0 0;
+  border-radius: 0.3rem;
+  font-size: 4.5vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #e78caf;
+  justify-content: center;
+  text-align: center;
+  -webkit-text-stroke: 0.1px #fff;
+  text-shadow: 0px 2px 5px black;
+}
+
+section em{
+  background-color: #edeabc;
+  display: inline-flex;
+  min-width: 20vw;
+  /* margin: 10vw auto; */
+  border-radius: 0.3rem;
+  font-size: 4.5vw;
+  font-weight: 700;
+  font-family: monospace;
+  color: #000000;
+  text-align: center;
+  -webkit-text-stroke: 0.1px #fff;
+  /* text-shadow: 0px 2px 5px black; */
+  font-style: normal;
+  position: relative;
+  bottom: -5vw;
+  padding: 0px 3vw;
+  align-self: center;
+  letter-spacing: 0.1vw;
+  box-shadow: 0px 4px 20px 0px black;
+  align-items: center;
+  min-height: 4vh;
+  justify-content: center;
+}
+
+section:last-of-type{min-height: fit-content;min-width: 60vw;top: 57.5vh;left: 20vw;box-shadow: 0px 0px 0px 1px white;border-radius: 100px;}
+
+section strong{
+  /* background-color: #edeabc; */
+  display: inline-flex;
+  /* min-width: 8vw; */
+  /* min-height: 8vw; */
+  margin: 0vw 2vw 0;
+  border-radius: 0.3rem;
+  font-size: 6.5vw;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #ede9bb;
+  justify-content: center;
+  text-align: center;
+  -webkit-text-stroke: 0.1px #fff;
+  text-shadow: 0px 2px 5px black;
+  /* border: #fff 100px; */
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+p, li, a{
+  font-size: 14px;
+}
+
+
+
+.hamburger .line{
+  width: 10vw;
+  height: 0.3vh;
+  background-color: #e78caf;
+  display: block;
+  margin: 1vh auto 0.39vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+
+/* THREE */
+
+#hamburger-3.is-active .line:nth-child(1),
+#hamburger-3.is-active .line:nth-child(3){
+  width: 40px;
+}
+
+#hamburger-3.is-active .line:nth-child(1){
+  -webkit-transform: translateX(-10px) rotate(-37deg);
+  -ms-transform: translateX(-10px) rotate(-45deg);
+  -o-transform: translateX(-10px) rotate(-45deg);
+  transform: translateX(-10px) rotate(-37deg);
+}
+
+#hamburger-3.is-active .line:nth-child(3){
+  -webkit-transform: translateX(-10px) rotate(37deg);
+  -ms-transform: translateX(-10px) rotate(45deg);
+  -o-transform: translateX(-10px) rotate(45deg);
+  transform: translateX(-10px) rotate(37deg);
+}
+
+
+div strong{
+    background-color: #e78caf;
+    display: inline-flex;
+    min-width: 72vw;
+    /* min-height: 8vw; */
+    margin: 0vw 2vw 0;
+    border-radius: 0.3rem;
+    font-size: 6.5vw;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #ede9bb;
+    text-align: center;
+    -webkit-text-stroke: 0.1px #fff;
+    text-shadow: 0px 2px 5px black;
+    /* border: #fff 100px; */
+    position: absolute;
+    justify-content: center;
+    top: 33.5vh;
+    left: 12vw;
+    transform: rotateY(90deg);
+    box-shadow: 0px 0px 500px 500px #a3b1a608;
+    transition: all linear 0.1s;
+    z-index: 2;
+    border-radius: 7vw;
+}
+
+div strong:nth-of-type(2){
+    top: 40.5vh;  
+}
+
+.rotate{
+    transform: rotateY(0deg);
+
+}
